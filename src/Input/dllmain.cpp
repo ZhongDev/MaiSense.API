@@ -49,28 +49,28 @@ BOOL APIENTRY DllMain(HMODULE hMod, DWORD cause, LPVOID lpReserved)
             case 0x38: // 8
                 sensor->Queue(Sensor::A8, ev.Active);
                 break;
-            case VK_NUMPAD1: // NUMPAD 1
+            case 0x39: // 9 (B1)
                 sensor->Queue(Sensor::B1, ev.Active);
                 break;
-            case VK_NUMPAD2: // NUMPAD 2
+            case 0x50: // P (B2)
                 sensor->Queue(Sensor::B2, ev.Active);
                 break;
-            case VK_NUMPAD3: // NUMPAD 3
+            case 0x48: // H (B3)
                 sensor->Queue(Sensor::B3, ev.Active);
                 break;
-            case VK_NUMPAD4: // NUMPAD 4
+            case 0x4D: // M (B4)
                 sensor->Queue(Sensor::B4, ev.Active);
                 break;
-            case VK_NUMPAD5: // NUMPAD 5
+            case 0x4F: // O (B5)
                 sensor->Queue(Sensor::B5, ev.Active);
                 break;
-            case VK_NUMPAD6: // NUMPAD 6
+            case 0x4B: // K (B6)
                 sensor->Queue(Sensor::B6, ev.Active);
                 break;
-            case VK_NUMPAD7: // NUMPAD 7
+            case 0x4E: // N (B7)
                 sensor->Queue(Sensor::B7, ev.Active);
                 break;
-            case VK_NUMPAD8: // NUMPAD 8
+            case 0x4A: // J (B8)
                 sensor->Queue(Sensor::B8, ev.Active);
                 break;
             }
